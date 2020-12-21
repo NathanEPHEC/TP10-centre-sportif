@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset=utf-8>
+  <title>TP10 - Projet - Centre sportif</title>
+  <link rel=stylesheet href="css/centre-sportif.css">
+  <script src="js/centre-sportif.js"></script>
+</head>
+<body>
+  <section class= "banner">
+    <h2>Réserver votre cours maintenant</h2>
+    <div class= "card-container">
+      <div class= "card-img">
+      </div>
+      <div class= "card-content">
+        <table>
+          <thead>
+            <tr>
+              <th class=nom>Cours</th>
+              <th class=prx>Prix (€)</th>
+              <th class=add>Réserver</th>
+            </tr>
+          </thead>
+          <tbody id=tableCours></tbody>
+        </table>
+      </div>
+    </div>
+    </section>
+      <div id="achats" class= "achats">
+        <table>
+          <caption>Cours dans votre liste</caption>
+          <thead>
+            <tr>
+              <th class=nom>Cours</th>
+              <th class=prx>Prix (€)</th>
+              <th class=nbr>Personne(s)</th>
+              <th class=del>Retirer</th>
+            </tr>
+          </thead>
+          <tbody id=tableAchats>
+          </tbody>
+        </table>
+        <div id=montant class= "montant">Montant total (€) : <span id=tot>0.00</span></div>
+      </div>
+      <script>afficherCours();</script>
+</body>
+</html>
